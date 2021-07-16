@@ -1,0 +1,52 @@
+#main {
+  grid-area: products;
+}
+.title {
+  position: absolute;
+  top: 5px;
+}
+#main {
+  width: 550px;
+  height: 90%;
+}
+
+.swiper-container {
+  width: 530px;
+}
+.swiper-wrapper {
+  padding-inline-start: 0;
+}
+.swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 641px) and (max-width: 983px) {
+  #main {
+    height: 100%;
+    width: 90%;
+  }
+  .swiper-container {
+    width: 550px;
+  }
+}
+@media (max-width: 640px) {
+  #main {
+    width: 90vw;
+    height: 100%;
+  }
+  .swiper-container {
+    width: 300px;
+  }
+}
+@media (min-width: 984px) {
+  #main {
+    width: 90%;
+    height: 100%;
+  }
+  .swiper-container {
+    width: 550px;
+  }
+}

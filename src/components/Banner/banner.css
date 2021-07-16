@@ -1,0 +1,92 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form {
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--colorbackgroundinput);
+}
+.form.grid {
+  grid-auto-flow: row;
+}
+.input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input input {
+  outline: 0;
+  border: 1px solid var(--colorbackgroundinput);
+  border-radius: 4px;
+  padding: 0.875rem 1rem 0 0.625rem;
+}
+.input label {
+  position: absolute;
+  padding: 0 0.75rem;
+  pointer-events: none;
+
+  transform: translate(0, 8px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+
+.input:focus-within label {
+  transform: translate(0, 0) scale(0.75);
+}
+
+.input .activeName {
+  transform: translate(0, 0) scale(0.75);
+}
+.input .activeEmail {
+  transform: translate(0, 0) scale(0.75);
+}
+
+.button {
+  padding: 0.5rem;
+  border: 0;
+  background-color: var(--color3);
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+.error{
+  display: inline;
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+}
+
+@media (min-width: 200px) and (max-width: 650px) {
+  .content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .form {
+    margin: 1rem 0 0 0;
+    width: 80%;
+    min-width: 250px;
+  }
+  .input {
+    flex-direction: column;
+  }
+}
+@media (min-width: 641px) and (max-width: 983px) {
+  .content {
+    flex-direction: row;
+    padding-bottom: 1rem;
+  }
+  .form {
+    margin: 1rem 0 0 0;
+    width: 80%;
+    min-width: 250px;
+  }
+  .input {
+    flex-direction: column;
+  }
+}

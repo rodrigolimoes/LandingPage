@@ -1,0 +1,24 @@
+.aside {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: rgb(236, 214, 98);*/
+}
+.name_blackFriday {
+  writing-mode: vertical-lr;
+  font-size: 1.5rem;
+  color: white;
+}
+.red {
+  color: rgb(236, 27, 27);
+}
+.black {
+  color: black;
+}
+@media (min-width: 200px) and (max-width: 650px) {
+  .name_blackFriday {
+    writing-mode: horizontal-tb;
+    font-size: 1.3rem;
+  }
+}

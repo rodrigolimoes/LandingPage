@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.header {
+  width: 100%;
+  background-color: var(--colorLogo);
+}
+.header .nav {
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+}
+.header .nav h1 {
+  color: white;
+}
+.social_midia ul li i {
+  font-size: 1.7rem;
+  color: white;
+  transition: 1.3s;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.social_midia ul li i:hover {
+  color: rgb(40, 78, 120);
+  transform: scale(1.0);
+}
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
