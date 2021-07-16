@@ -17,11 +17,11 @@ ul {
   height: 100%;
 }
 .header .nav h1 {
-  color: white;
+  color: rgb(62, 33, 93);
 }
 .social_midia ul li i {
   font-size: 1.7rem;
-  color: white;
+  color: rgb(62, 33, 93);
   transition: 1.3s;
   cursor: pointer;
   transform: scale(0.9);

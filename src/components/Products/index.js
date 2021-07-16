@@ -97,8 +97,6 @@ function Products() {
       wrapperTag="ul"
       navigation
       pagination={{ clickable: true }}
-      onSwiper={swiper => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
       <h2 className="title">Produtos</h2>
       {Products.map((items, index) => (

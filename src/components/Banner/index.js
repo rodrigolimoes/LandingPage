@@ -31,8 +31,8 @@ function Banner() {
     } else{
       setError(false)
       localStorage.setItem('information', JSON.stringify(information))
+      window.alert('Cadastro Realizado com sucesso.')
     }
-    console.log(error)
 
   }
   return (
@@ -62,7 +62,7 @@ function Banner() {
             <input
               name="email"
               id="email"
-              type="text"
+              type="email"
               value={valueEmail}
               onChange={e => handleTextChangeEmail(e.target.value)}
             />
@@ -74,7 +74,7 @@ function Banner() {
               Email
             </label>
           </div>
-          {error ? <h4 className="error">campo vazio</h4>:''}
+          {error ? <h4 className="error">Campo vazio</h4>:''}
           <button className="button" onClick={getInformation}>
             {' '}
             Enviar
